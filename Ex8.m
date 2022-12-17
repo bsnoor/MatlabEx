@@ -1,3 +1,4 @@
+#Q1
 x1 = str2double(input('enter a M1x: '));
 y1 = str2double(input('enter a M1y: '));
 x2 = str2double(input('enter a M2x: '));
