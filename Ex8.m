@@ -93,4 +93,14 @@ elseif(x>=x4)
     fprintf('x elemnt of N5')
 end
 
+#Q6
+x1= str2double(input('enter fisrt'));
+x2= str2double(input('enter second'));
+x3= str2double(input('enter third'));
 
+v=[x1 x2 x3];
+v_sorted = sort(v);
+
+disp(['the first element is ', num2str(v_sorted(1))])
+disp(['the second element is ', num2str(v_sorted(2))])
+disp(['the third element is ', num2str(v_sorted(3))])
