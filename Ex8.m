@@ -157,4 +157,24 @@ end
 
 fprintf('max is %d', max )
 
+#Q11
+x1= str2double(input('enter a x1: '));
+x2= str2double(input('enter a x2: '));
+x3= str2double(input('enter a x3: '));
+x4=str2double(input('enter a x4: '));
+
+v=[x1 x2 x3 x4];
+sum1=0;
+sum2=0;
+
+for i=1:length(v)
+    if(rem(i,2)==0)
+        sum1=sum1+v(i)^2;
+    else
+        sum2=sum2+v(i)^2;
+    end
+end
+
+fprintf('sum in even place is %d \n', sum1 )
+fprintf('sum in odd place is %d \n', sum2 )
 
