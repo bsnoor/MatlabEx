@@ -140,4 +140,21 @@ else
 end
 
 
+#Q10
+x1= str2double(input('enter fisrt'));
+x2= str2double(input('enter second'));
+x3= str2double(input('enter third'));
+
+
+v=[x1 x2 x3];
+max=x1;
+v1=abs(v);
+for i=1:3
+    if(v1(i)>max)
+        max=v1(i);
+    end
+end
+
+fprintf('max is %d', max )
+
 
