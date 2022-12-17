@@ -118,4 +118,26 @@ disp(['the max element is ', num2str(v_sorted(4))])
 disp(['the min element is ', num2str(v_sorted(1))])
 
 
+#Q8
+x1= str2double(input('enter fisrt'));
+x2= str2double(input('enter second'));
+x3= str2double(input('enter third'));
+
+
+
+if(x1+x2>x3 && x1+x3>x2 && x3+x2>x1)
+
+    if(x1==x2||x2==x3)
+        disp(' two sides is equal')
+    elseif(x1==x2 && x2==x3)
+        disp('all sides is equal ')
+    else
+        disp('isnt equal')
+    end
+
+else 
+  disp('isnt triangle')
+end
+
+
 
