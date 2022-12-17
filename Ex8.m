@@ -104,3 +104,15 @@ v_sorted = sort(v);
 disp(['the first element is ', num2str(v_sorted(1))])
 disp(['the second element is ', num2str(v_sorted(2))])
 disp(['the third element is ', num2str(v_sorted(3))])
+
+#Q7
+x1= str2double(input('enter fisrt'));
+x2= str2double(input('enter second'));
+x3= str2double(input('enter third'));
+x4= str2double(input('enter fourth'));
+
+v=[x1 x2 x3 x4];
+v_sorted = sort(v);
+
+disp(['the max element is ', num2str(v_sorted(4))])
+disp(['the min element is ', num2str(v_sorted(1))])
