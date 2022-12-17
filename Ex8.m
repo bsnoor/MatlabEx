@@ -73,6 +73,24 @@ end
 fprintf('the sum is %d \n:',sum)
 fprintf('the multi is %d:',multi)
 
+#Q3
+x=str2double(input('enter x'));
+x1= str2double(input('enter x1'));
+x2= str2double(input('enter x2'));
+x3= str2double(input('enter x3'));
+x4= str2double(input('enter x4'));
 
+
+if(x<x1)
+    fprintf('x elemnt of N1')
+elseif(x>=x1 && x<x2)
+    fprintf('x elemnt of N2 ')
+elseif(x>=x2 && x<x3)
+    fprintf('x elemnt of N3')
+elseif(x>=x3 && x<x4)
+    fprintf('x elemnt of N4')
+elseif(x>=x4)
+    fprintf('x elemnt of N5')
+end
 
 
