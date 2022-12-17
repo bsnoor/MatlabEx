@@ -26,10 +26,6 @@ else
 end
 
 #Q2
-#נתונים ארבעה זוגות מספרים 
-#(x,y)
-#שהם הקואורדינטות של קודקודי מרובע
-קבעו אם המרובע הוא "מעוין", "מקבילית" או "אחר
 x1=str2double(input('enter the first coordinate of  p1'));
 y1=str2double(input('enter the second coordinate of p1'));
 x2=str2double(input('enter the first coordinate of  p2'));
@@ -57,4 +53,26 @@ elseif(p1p2==p1p3 &p2p4==p3p4)
 else
     fprintf('another shape')
 end   
+
+#Q3
+x1= str2double(input('enter x1'));
+x2= str2double(input('enter x2'));
+x3= str2double(input('enter x3'));
+x4= str2double(input('enter x4'));
+
+M=[x1 x2 x3 x4];
+
+sum=0;
+multi=1;
+
+for i=1:4
+    sum=sum+M(i);
+    multi=multi*M(i);
+end
+
+fprintf('the sum is %d \n:',sum)
+fprintf('the multi is %d:',multi)
+
+
+
 
