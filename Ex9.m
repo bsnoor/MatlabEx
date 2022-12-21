@@ -207,6 +207,72 @@ disp("the matrix :")
 disp(ones1);
 
 #Q16
+A=randi([2 10],3);
+B=randi([2 10],2,3);
+B=[B;zeros(1,3)];
+
+disp(" A+B: ");
+c=A+B;
+disp(c);
+
+disp(" A-B: ");
+c=A-B;
+disp(c);
+
+disp(" A*B ");
+c=A*B;
+disp(c);
+
+disp("A*B' ");
+c=A*B';
+disp(c);
+
+disp("INV(A)*B ");
+c=(inv(A))*B;
+disp(c);
+
+disp("A*inv(B) ");
+c=A*(inv(B));
+disp(c);
+
+disp("det of A ");
+c=det(A);
+disp(c);
+
+disp("det of B ");
+c=det(B);
+disp(c);
+
 disp("det of AB ");
 c=det(A*B);
 disp(c);
+
+disp("size of A =2x3 ");
+A(2,:)=[];
+disp(A);
+
+#Q17
+A=[2 1 -3 ; 0.5 -3 1 ; 1 -1 -7];
+b=[-5; 4;12];
+x=(inv(A))*b;
+disp("the vector x equal to :");
+disp(x);
+
+A=[1 2 6 6 ; 1 -1 3 6 ; 3 -3 -1 6;1 -1 -1 1];
+b=[-10; 2;5 ;3];
+x=(inv(A))*b;
+disp("the vector x equal to :");
+disp(x);
+
+#Q18
+A=randi([2,10],3);
+r=rank(A);
+disp("the matrix: ")
+disp(A);
+if r==size(A,3)
+    disp("the matrix has a unique solution")
+else
+    disp("the matrix dosnt has a unique solution")
+end   
+
+
