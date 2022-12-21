@@ -206,4 +206,7 @@ ones1(3,3)=n;
 disp("the matrix :")
 disp(ones1);
 
-
+#Q16
+disp("det of AB ");
+c=det(A*B);
+disp(c);
