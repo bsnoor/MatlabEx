@@ -122,4 +122,43 @@ x=(inv(A))*b;
 disp("the answe is : ")
 disp(x)
 
+#Q11
+P1=[-6 9 -3];
+P2=[5 -10 25];
+P3=[1 -0.6 0.73];
+
+disp("the answer of the first polynomial when x=1")
+value1= polyval(P1,1);
+disp(value1);
+disp("the answer of the first polynomial when x=0.3")
+value1= polyval(P1,0.3);
+disp(value1);
+
+
+disp("the answer of the second polynomial when x=1")
+value2= polyval(P2,1);
+disp(value2);
+disp("the answer of the second polynomial when x=0.3")
+value2= polyval(P2,0.3);
+disp(value2);
+
+
+disp("the answer of the third polynomial when x=1")
+value3= polyval(P3,1);
+disp(value3);
+disp("the answer of the third polynomial when x=0.3")
+value3= polyval(P3,0.3);
+disp(value3);
+
+#Q12
+poly=[1 5 4];
+der=polyder(poly);
+x1=poly2sym(der);
+disp("the derivative of polynomial");
+disp(x1);
+int2=polyint(poly);
+y1=poly2sym(int2);
+disp("the integral of polynomial");
+disp(y1);
+
 
