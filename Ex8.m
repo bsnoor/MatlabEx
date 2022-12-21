@@ -1,12 +1,12 @@
 #Q1
-x1 = str2double(input('enter a M1x: '));
-y1 = str2double(input('enter a M1y: '));
-x2 = str2double(input('enter a M2x: '));
-y2 = str2double(input('enter a M2y: '));
-x3 = str2double(input('enter a M3x: '));
-y3 = str2double(input('enter a M3y: '));
-x4 = str2double(input('enter a M4x: '));
-y4 = str2double(input('enter a M4y: '));
+x1 = input("enter a M1x: ");
+y1 = input("enter a M1y: ");
+x2 = input("enter a M2x: ");
+y2 = input("enter a M2y: ");
+x3 = input("enter a M3x: ");
+y3 = input("enter a M3y: ");
+x4 = input("enter a M4x: ");
+y4 = input("enter a M4y: ");
 
 m1 = [x1 y1];
 m2 = [x2 y2];
@@ -26,14 +26,14 @@ else
 end
 
 #Q2
-x1=str2double(input('enter the first coordinate of  p1'));
-y1=str2double(input('enter the second coordinate of p1'));
-x2=str2double(input('enter the first coordinate of  p2'));
-y2=str2double(input('enter the second coordinate of p2'));
-x3=str2double(input('enter the first coordinate of  p3'));
-y3=str2double(input('enter the second coordinate of p3'));
-x4=str2double(input('enter the first coordinate of  p4'));
-y4=str2double(input('enter the second coordinate of p4'));
+x1=input("enter the first coordinate of  p1");
+y1=input("enter the second coordinate of p1");
+x2=input("enter the first coordinate of  p2");
+y2=input("enter the second coordinate of p2");
+x3=input("enter the first coordinate of  p3");
+y3=input("enter the second coordinate of p3");
+x4=input("enter the first coordinate of  p4");
+y4=input("enter the second coordinate of p4");
 
 p1=[x1 y1];
 p2=[x2 y2];
@@ -55,8 +55,8 @@ else
 end   
 
 #Q3
-x1= str2double(input('enter x1'));
-x2= str2double(input('enter x2'));
+x1= input("enter x1");
+x2= input("enter x2");
 x3= str2double(input('enter x3'));
 x4= str2double(input('enter x4'));
 
