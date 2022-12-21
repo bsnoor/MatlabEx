@@ -161,4 +161,39 @@ y1=poly2sym(int2);
 disp("the integral of polynomial");
 disp(y1);
 
+#Q13
+pol2=[1 -2 -28 26 144];
+xmin=-50;
+xmax=50;
+
+disp("the min of polynomial");
+[x,fval]=fminbnd(@(x)polyval(pol2,x),xmin,xmax)
+disp("the max of polynomial");
+pol2=-pol2;
+[x,fval]=fminbnd(@(x)polyval(pol2,x),xmin,xmax)
+poly2der=polyder(polyder(pol2));
+infle_point=roots(poly2der);
+disp("the inflection points of polynomial");
+disp(infle_point);
+
+#Q14
+disp("the matrix of 3x3 of -2 in eye ");
+A=-2*eye(3);
+disp(A);
+
+disp("the matrix of 3x3 of 4 in eye ");
+B=1*eye(3)+3*ones(3);
+disp(B);
+
+disp("the matrix of 3x3 of 3 in LU ");
+B=3*ones(3);
+ B(1,1)=4;
+ B(2,2)=5;
+ B(3,3)=6;
+ disp(B);
+ disp("the  last matrix  ");
+B=3*ones(3);
+ B(1,2)=4;
+ B(2,3)=4;
+ disp(B);
 
