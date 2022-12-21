@@ -55,10 +55,10 @@ else
 end   
 
 #Q3
-x1= input("enter x1");
-x2= input("enter x2");
-x3= str2double(input('enter x3'));
-x4= str2double(input('enter x4'));
+x1= input("enter fisrt");
+x2= input("enter second");
+x3= input("enter third");
+x4= input("enter fourth");
 
 M=[x1 x2 x3 x4];
 
@@ -74,11 +74,11 @@ fprintf('the sum is %d \n:',sum)
 fprintf('the multi is %d:',multi)
 
 #Q3
-x=str2double(input('enter x'));
-x1= str2double(input('enter x1'));
-x2= str2double(input('enter x2'));
-x3= str2double(input('enter x3'));
-x4= str2double(input('enter x4'));
+x=input("enter x");
+x1= input("enter fisrt");
+x2= input("enter second");
+x3= input("enter third");
+x4= input("enter fourth");
 
 
 if(x<x1)
@@ -94,9 +94,9 @@ elseif(x>=x4)
 end
 
 #Q6
-x1= str2double(input('enter fisrt'));
-x2= str2double(input('enter second'));
-x3= str2double(input('enter third'));
+x1= input("enter fisrt");
+x2= input("enter second");
+x3= input("enter third");
 
 v=[x1 x2 x3];
 v_sorted = sort(v);
@@ -106,10 +106,10 @@ disp(['the second element is ', num2str(v_sorted(2))])
 disp(['the third element is ', num2str(v_sorted(3))])
 
 #Q7
-x1= str2double(input('enter fisrt'));
-x2= str2double(input('enter second'));
-x3= str2double(input('enter third'));
-x4= str2double(input('enter fourth'));
+x1= input("enter fisrt");
+x2= input("enter second");
+x3= input("enter third");
+x4= input("enter fourth");
 
 v=[x1 x2 x3 x4];
 v_sorted = sort(v);
@@ -119,9 +119,9 @@ disp(['the min element is ', num2str(v_sorted(1))])
 
 
 #Q8
-x1= str2double(input('enter fisrt'));
-x2= str2double(input('enter second'));
-x3= str2double(input('enter third'));
+x1= input("enter fisrt");
+x2= input("enter second");
+x3= input("enter third");
 
 
 
@@ -141,9 +141,9 @@ end
 
 
 #Q10
-x1= str2double(input('enter fisrt'));
-x2= str2double(input('enter second'));
-x3= str2double(input('enter third'));
+x1= input("enter fisrt");
+x2= input("enter second");
+x3= input("enter third");
 
 
 v=[x1 x2 x3];
@@ -158,10 +158,10 @@ end
 fprintf('max is %d', max )
 
 #Q11
-x1= str2double(input('enter a x1: '));
-x2= str2double(input('enter a x2: '));
-x3= str2double(input('enter a x3: '));
-x4=str2double(input('enter a x4: '));
+x1= input("enter a x1: ");
+x2= input("enter a x2: ");
+x3= input("enter a x3: ");
+x4=input("enter a x4: ");
 
 v=[x1 x2 x3 x4];
 sum1=0;
