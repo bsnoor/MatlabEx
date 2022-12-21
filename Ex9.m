@@ -197,3 +197,13 @@ B=3*ones(3);
  B(2,3)=4;
  disp(B);
 
+#Q15
+n=randi([2 10]);
+ones1=n^2*ones(3,3);
+ones1(1,1)=n;
+ones1(2,2)=n;
+ones1(3,3)=n;
+disp("the matrix :")
+disp(ones1);
+
+
