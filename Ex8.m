@@ -51,7 +51,7 @@ else
     fprintf('another shape')
 end   
 
-#Q3
+disp("Q3");
 x1= input("enter fisrt");
 x2= input("enter second");
 x3= input("enter third");
@@ -61,14 +61,12 @@ M=[x1 x2 x3 x4];
 
 sum=0;
 multi=1;
-
-for i=1:4
-    sum=sum+M(i);
-    multi=multi*M(i);
-end
-
-fprintf('the sum is %d \n:',sum)
-fprintf('the multi is %d:',multi)
+if (-5 <= x1 && x1 <= 5) && (-5 <= x2 && x2 <= 5) &&... 
+    (-5 <= x3 && x3 <= 5)  && (-5 <= x4 && x4 <= 5)
+    result=true;
+else
+    result=false;
+end    
 
 #Q3
 x=input("enter x");
