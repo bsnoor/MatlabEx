@@ -277,4 +277,19 @@ else
     disp("the matrix dosnt has a unique solution")
 end   
 
+disp("Q13")
+A=randi([-10,10],1,5);
+disp(A);
+A1=abs(A);
+count=0;
+for i=1:5
+  if(A(i)<0 && rem(A1(i),2)== 1) 
+  count=count+1;
+   end
+end
+if(count>0)
+    disp("1");
+else
+    disp("0")
+end
 
