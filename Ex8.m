@@ -50,13 +50,13 @@ elseif(logical(p1p2==p1p3) && logical(p2p4==p3p4))
 else
     fprintf('another shape')
 end   
-
+disp(" ");
 disp("Q3");
 x1= input("enter fisrt");
 x2= input("enter second");
 x3= input("enter third");
 x4= input("enter fourth");
-sum=0;
+sum3=0;
 multi=1;
 if (1 <= x1 && x1 <= 5) && (1 <= x2 && x2 <= 5) &&... 
     (1 <= x3 && x3 <= 5)  && (1 <= x4 && x4 <= 5)
