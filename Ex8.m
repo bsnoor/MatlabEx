@@ -22,7 +22,7 @@ else
     fprintf('the most close point is :m3\n');
 end
 
-#Q2
+disp("Q2");
 x1=input("enter the first coordinate of  p1");
 y1=input("enter the second coordinate of p1");
 x2=input("enter the first coordinate of  p2");
@@ -43,9 +43,9 @@ p3p4=sqrt(dot(p3-p4,p3-p4));
 p2p4=sqrt(dot(p2-p4,p2-p4));
 
 
-if(p1p2==p3p4 & p1p3==p2p4)
+if(logical(p1p2==p3p4) && logical(p1p3==p2p4))
     fprintf('this is rectangle')
-elseif(p1p2==p1p3 &p2p4==p3p4)
+elseif(logical(p1p2==p1p3) && logical(p2p4==p3p4))
     fprintf('this is a certian')
 else
     fprintf('another shape')
