@@ -196,3 +196,31 @@ end
 fprintf('sum in even place is %d \n', sum1 )
 fprintf('sum in odd place is %d \n', sum2 )
 
+disp("Q13")
+A=randi([-10,10],1,5);
+disp(A);
+A1=abs(A);
+count=0;
+for i=1:5
+  if(A(i)<0 && rem(A1(i),2)== 1) 
+  count=count+1;
+   end
+end
+if(count>0)
+    disp("1");
+else
+    disp("0")
+end
+
+disp("Q15")
+A=randi([-10,10],1,5);
+disp(A);
+A1=abs(A);
+count=0;
+for i=1:5
+  if(A(i)<0 && rem(i,2)== 0) 
+  count=count+A(i);
+   end
+end
+disp("the sum is equal to :");
+disp(count);
