@@ -68,7 +68,7 @@ else
     result=false;
 end    
 
-#Q3
+disp("Q4");
 x=input("enter x");
 x1= input("enter fisrt");
 x2= input("enter second");
