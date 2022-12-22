@@ -119,8 +119,7 @@ else
     disp("the numbers not in the range")
 end
 
-
-#Q6
+disp("Q6");
 x1= input("enter fisrt");
 x2= input("enter second");
 x3= input("enter third");
@@ -132,7 +131,7 @@ disp(['the first element is ', num2str(v_sorted(1))])
 disp(['the second element is ', num2str(v_sorted(2))])
 disp(['the third element is ', num2str(v_sorted(3))])
 
-#Q7
+disp("Q7");
 x1= input("enter fisrt");
 x2= input("enter second");
 x3= input("enter third");
@@ -145,60 +144,52 @@ disp(['the max element is ', num2str(v_sorted(4))])
 disp(['the min element is ', num2str(v_sorted(1))])
 
 
-#Q8
+disp("Q8")
 x1= input("enter fisrt");
 x2= input("enter second");
 x3= input("enter third");
-
-
-
 if(x1+x2>x3 && x1+x3>x2 && x3+x2>x1)
-
-    if(x1==x2||x2==x3)
+    if(x1==x2||x2==x3||x1==x3)
         disp(' two sides is equal')
     elseif(x1==x2 && x2==x3)
         disp('all sides is equal ')
     else
         disp('isnt equal')
     end
-
 else 
   disp('isnt triangle')
 end
 
 
-#Q10
+disp("Q10");
 x1= input("enter fisrt");
 x2= input("enter second");
 x3= input("enter third");
-
-
 v=[x1 x2 x3];
-max=x1;
+max=0;
 v1=abs(v);
 for i=1:3
+  if(v(i)<0) 
     if(v1(i)>max)
         max=v1(i);
     end
+   end
 end
-
 fprintf('max is %d', max )
 
-#Q11
+disp("Q11 + Q12");
 x1= input("enter a x1: ");
 x2= input("enter a x2: ");
 x3= input("enter a x3: ");
 x4=input("enter a x4: ");
-
 v=[x1 x2 x3 x4];
 sum1=0;
 sum2=0;
-
 for i=1:length(v)
     if(rem(i,2)==0)
-        sum1=sum1+v(i)^2;
+        sum1=sum1+(v(i))^2;
     else
-        sum2=sum2+v(i)^2;
+        sum2=sum2+(v(i))^2;
     end
 end
 
