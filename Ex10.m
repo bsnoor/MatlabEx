@@ -103,4 +103,14 @@ b=0.5;
 Q=integral(f,a,b);
 disp(Q);
 
+disp("Q9");
+syms x
+c=input("enter a number");
+f=simplify((8*x^3-1)/(6*x^2-5*x+1));
+p1=subs(f,x,-3);
+disp(" x=-3");
+disp(p1);
+disp("x=c");
+p2=subs(f,x,c);
+disp(p2);
 
