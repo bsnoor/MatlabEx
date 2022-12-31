@@ -94,5 +94,13 @@ N=integral(f,a,b);
 disp(N);
 
 
+disp("Q8")
+syms x
+
+f=@(x) exp(x)./(1+sin(3*x));
+a=0.1;
+b=0.5;
+Q=integral(f,a,b);
+disp(Q);
 
 
