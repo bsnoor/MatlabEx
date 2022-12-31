@@ -78,10 +78,21 @@ disp("Q4");
 
 
 disp("Q5");
-
+syms x
 f=@(x)sin(2*x)./(x.^2+1);
 a=0.5;
 b=1.5;
 A=integral(f,a,b);
 disp(A);
+
+disp("Q6");
+syms x
+f=@(x) sqrt(0.2*x.^2+1);
+a=0.2;
+b=1.8;
+N=integral(f,a,b);
+disp(N);
+
+
+
 
