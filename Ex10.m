@@ -62,3 +62,26 @@ I=sum*h;
 disp(I);
 
 
+
+disp("Q4");
+ syms x y;
+ eqn1=x-y-1==0;
+ eqn2=y^2==2*x+1;
+ [x_sol, y_sol]=solve([eqn1 , eqn2],[x ,y]);
+ a=min(double(x_sol));
+ b=max(double(y_sol));
+ f=@(x) x-1;
+ g=@(x) sqrt(2*x+1);
+ A=integral(@(x) f(x)-g(x),a,b );
+ figure;
+ fplot(f,g,[a,b]);
+
+
+disp("Q5");
+
+f=@(x)sin(2*x)./(x.^2+1);
+a=0.5;
+b=1.5;
+A=integral(f,a,b);
+disp(A);
+
