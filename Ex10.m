@@ -22,3 +22,26 @@ for i=1:length(H)
   I(i)=sum*h; %calculate the integral as the sum multiplied by the step size
   disp(I(i));
 end
+
+
+disp("Q2");
+f=@(x) 1/(1+sin(x)+x);
+N=[10,100];
+a=0.4;
+b=0.5;
+I=zeros(size(N));
+for i=1:length(N)
+    n=N(i);
+    h=(b-a)/n;
+    sum=0;
+    for j=0:n
+        x=a+j*h;
+        sum=sum+f(x);
+    end
+     disp("the result with step size n=")
+  disp(N(i));
+  I(i)=sum*h; %calculate the integral as the sum multiplied by the step size
+  disp(I(i));
+end
+
+
