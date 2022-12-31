@@ -45,3 +45,20 @@ for i=1:length(N)
 end
 
 
+
+
+disp("Q3");
+f=@(x) sqrt(x).*cos(x.^2);
+a=0.4;
+b=0.6;
+h=0.01;
+n=(b-a)/h;
+sum=0;
+for i=0:n
+    x=a+i*h;
+    sum=sum+f(x);
+end
+I=sum*h;
+disp(I);
+
+
