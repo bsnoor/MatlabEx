@@ -1,8 +1,8 @@
 clc ,clear
 disp("Q1");
 h=[4 0 -3;6 8 0;0 0 0];
-findzero(h);
-function findzero(A)
+l5_p4(h);
+function l5_p4(A)
     [m,n]=size(A);
 %     disp('  rows:  Place:');
    for i=1:m
