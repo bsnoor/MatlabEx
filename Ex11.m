@@ -23,3 +23,15 @@ function findzero(A)
 end
 
 
+disp("Q2");
+v=[3 6 5 3 6 9 5 3 1 0];
+queue(v);
+function queue(V)
+  n=numel(V);
+  shift2=[V(n),V(1:n-1)];
+  shift2(1)=shift2(2);
+  disp(shift2);
+end
+
+
+
