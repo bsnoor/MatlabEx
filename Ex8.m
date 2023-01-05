@@ -1,5 +1,6 @@
 clc, clear
 disp("Q1");
+
 x1 = input("enter a M1x: ");
 y1 = input("enter a M1y: ");
 x2 = input("enter a M2x: ");
@@ -22,7 +23,9 @@ else
     fprintf('the most close point is :m3\n');
 end
 disp(" ");
+
 disp("Q2");
+
 x1=input("enter the first coordinate of  p1");
 y1=input("enter the second coordinate of p1");
 x2=input("enter the first coordinate of  p2");
