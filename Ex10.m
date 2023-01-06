@@ -76,6 +76,18 @@ disp("Q4");
  figure;
  fplot(f,g,[a,b]);
 
+disp("Q4")
+x=-4:0.1:4;
+axis=[-4 4 -4 4];
+y1=sqrt(2*x+1);
+y2=x+1;
+plot(x,y1,'+',x,y2,'*')
+x=[0 4];
+y=[-1 3];
+S=((y(1)+y(2))/2)*(x(2)-x(1));
+disp("the are equal to :")
+disp(S);
+
 
 disp("Q5");
 syms x
