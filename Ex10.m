@@ -112,3 +112,14 @@ disp("x=c");
 p2=subs(f,x,c);
 disp(p2);
 
+disp("Q10")
+v1=round(rand(1,4)*10);
+v2=round(rand(1,4)*10);
+V=[v1;v2];
+disp(V);
+
+for i=1:length(V)
+     min_val=min(V(:,i));
+     V(V(:,i)==min_val,i)=sum((V(:,i)));  
+end
+disp(V);
