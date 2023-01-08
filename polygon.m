@@ -1,4 +1,4 @@
-function S=polygon(A ,B,C,D,E)
+
 function S=polygon(A ,B,C,D,E)
 
 AE=[E(1)-A(1),E(2)-A(2),0];
